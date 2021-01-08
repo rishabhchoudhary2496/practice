@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Positions</title>
+    <style>
+     .parent{
+        background:slateblue;
+        font-size: 1.5rem;
+        padding:8px;
+        position: relative;
+        height: 200vh;
+     }
+     .child{
+        padding:2px;
+     }
+     .child-one{
+         background:limegreen;
+         position: absolute;
+         top:0px;
+     }
+     .child-two{
+         background:forestgreen;
+         position: sticky;
+         top: 0;
+         right: 0;
+     }
+     .child-three{
+         background:hotpink;
+         
+     }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        Parent
+        <div class="child child-one">One</div>
+        <div class="child child-two">Two</div>
+        <div class="child child-three">Three</div>
+    </div>
+</body>
+</html>

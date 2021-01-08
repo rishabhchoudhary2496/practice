@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jquery Effects</title>
+</head>
+<body>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid quod facilis illo dolore architecto optio est. At molestiae sunt delectus vel, fugiat eaque provident natus minima, est eligendi accusamus ad itaque eum nesciunt ratione. Aspernatur veritatis eum itaque atque eligendi!</p>
+    <button id="showBtn">show</button>
+    <button id="hideBtn">Hide</button>
+    <button id="toggleBtn">Toggle</button>
+</body>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+ <script>
+     $(document).ready(function(){
+        $('#showBtn').click(function() {
+            $("p").show()
+        })
+        $('#hideBtn').click(function() {
+            $("p").hide()
+        })
+        $('#toggleBtn').click(function() {
+            $("p").toggle()
+        })
+     })
+ </script>
+</html>

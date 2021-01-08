@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jquery Fading Effects</title>
+</head>
+<body>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid quod facilis illo dolore architecto optio est. At molestiae sunt delectus vel, fugiat eaque provident natus minima, est eligendi accusamus ad itaque eum nesciunt ratione. Aspernatur veritatis eum itaque atque eligendi!</p>
+    <button id="fadeIn">Fade In</button>
+    <button id="fadeOut">Fade Out</button>
+    <button id="fadeToggle">Fade Toggle</button>
+    <button id="fadeTo">Fade To</button>
+</body>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+ <script>
+     $(document).ready(function(){
+        $('#fadeIn').click(function() {
+            $("p").fadeIn()
+        })
+        $('#fadeOut').click(function() {
+            $("p").fadeOut()
+        })
+        $('#fadeToggle').click(function() {
+            $("p").fadeToggle()
+        })
+        $('#fadeTo').click(function() {
+            $("p").fadeTo("slow", 0.3)
+        })
+     })
+ </script>
+</html>
